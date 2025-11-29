@@ -1,0 +1,10 @@
+- `tput` is a program that generates escape sequences and therefore acts like a shortcut in commands
+- these commands can be used in command substitutions `$(..)`
+- `tput clear` - clears the terminal
+- `tput cup 5 20` - moves cursor vertically and horizontally
+- `tput bold` - executes escape sequences for bold text
+- `tput sgr0` - executes escape sequences for reseting all formatting
+- `tput smul`/ `tput rmul` - start and end underlined
+- `tput setaf [color]` - set foreground color (number between 0 and 15)
+- `tput setab [color]` - set background color
+- `tput colors`, `tput cols`, `tput lines` - queries how many colors, columns or lines the current terminal window supports (`infocmp` only shows the defaults for the terminal's capability)
