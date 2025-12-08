@@ -41,3 +41,13 @@ echo '------' | tee hello.txt | wc -c
 ```
 
 This preserves the output for the next pipe while also saving it to a file.
+
+## Pipes vs Streams
+
+The main difference between redirection (`>`, `<`) and pipes (`|`) in Bash is their target.
+
+- **Redirection** reroutes a command's input or output stream to or from a file (or another file descriptor).
+
+- **Pipes** connect the standard output of one command directly to the standard input of another command, creating a processing chain.
+
+> Think of it this way: Redirection deals with files, while Pipes deal with processes.

@@ -1,5 +1,7 @@
 # Data Streams
 
+The redirect characters in Bash, `>` and `<` (and their variations), are used to change where a command gets its input and where it sends its output.
+
 ## Overview: Three Standard Streams
 
 Bash has 3 standard streams:
@@ -106,3 +108,5 @@ Stream input from one file to another (essentially copying):
 ```bash
 [command] < in.txt > out.txt
 ```
+
+🔁 Redirection CharactersIn Unix-like systems, every running process typically has three standard data streams, each associated with a numbered file descriptor:0: Standard Input (stdin) - Where a command reads its input (usually the keyboard).1: Standard Output (stdout) - Where a command writes its normal output (usually the terminal).2: Standard Error (stderr) - Where a command writes its error messages (usually the terminal).The redirection characters manipulate these file descriptors:1CharacterDescriptionExample>Redirects stdout (FD 1) to a file, overwriting the file if it exists.ls > file_list.txt>>Redirects stdout (FD 1) to a file, appending to the file if it exists.date >> log.txt<Redirects stdin (FD 0) to read input from a file instead of the keyboard.sort < data.txt2>Redirects stderr (FD 2) to a file, overwriting it.command 2> errors.log&>Redirects both stdout and stderr to a file (Bash extension).command &> all_output.log2>&1Redirects stderr (FD 2) to the same location as stdout (FD 1).command > file 2>&1🔄

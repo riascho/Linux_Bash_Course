@@ -10,5 +10,3 @@
 - use the `unzip` command to unpack zip files:
   `unzip archive.zip -d [destination for extraction]`
   `-d` sets the destination directory, otherwise the zip file would be extracted in current working directory
-
-- command substitution: `echo "This is the output: $(ls)"` - `()` will use whatever the command outputs
