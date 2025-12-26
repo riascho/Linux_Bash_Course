@@ -94,3 +94,12 @@ userdel [options] [username]
 
 - `-r` remove home directory and mail spool
 - `-f` force removal even if user is still logged in (might also delete a group with the same name as this user - depending on system configuration)
+
+### `su` command to switch users
+
+```bash
+su [other-user]
+```
+
+- needs password for the other user
+- if no user specified (only `su`) root user will be switched to
