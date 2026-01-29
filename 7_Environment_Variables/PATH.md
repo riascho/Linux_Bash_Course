@@ -23,6 +23,9 @@ Asks the shell how it would resolve the given program name.
 
 ```bash
 which [program_name]
+
+# in zsh
+where [program_name]
 ```
 
 Simpler alternative to find the path of a program.

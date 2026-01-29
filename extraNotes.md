@@ -10,3 +10,21 @@
 - use the `unzip` command to unpack zip files:
   `unzip archive.zip -d [destination for extraction]`
   `-d` sets the destination directory, otherwise the zip file would be extracted in current working directory
+
+- the `watch` command is used to automatically re-execute a command.
+
+```bash
+watch -n 0.5 grep ctxt /proc/12345/status
+# refresh every 0.5 seconds to get the context switches of process 12345
+```
+
+- `cmatrix` fun little programm that turns the terminal into matrix
+
+## programs
+
+There is 2 types of programs:
+
+- built-in shell programs
+- executable file
+
+- `type [program name]` tells which type it is (and path)
