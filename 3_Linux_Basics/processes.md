@@ -110,6 +110,7 @@ Signals can come from different user sources and be of different type:
 - `SIGKILL` - Kill Process, forcefully terminates the program **immediately** (might cause data loss) => `Hard`. The `SIGKILL` signal is not handled by the process but by the kernel. Therefore the program isn't even informed about the signal.
 - `SIGILL` - Illegal Instruction
 - `SIGSTOP` - process is put into a paused state. This signal is not catchable, the process cannot ignore it.
+- `SIGTSTP` - `CTRL` + `Z` sends a nicer version of the `SIGSTOP` signal, it asks the program to pause execution and return to the terminal. This can be ignored by the program however.
 - `SIGCONT` - resumes a stopped process
 
 ## `kill` command to send signals to programs

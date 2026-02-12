@@ -8,3 +8,4 @@
 - `tput setaf [color]` - set foreground color (number between 0 and 15)
 - `tput setab [color]` - set background color
 - `tput colors`, `tput cols`, `tput lines` - queries how many colors, columns or lines the current terminal window supports (`infocmp` only shows the defaults for the terminal's capability)
+- `tput bel` - makes a sound! (cool to be used with the `wait` command)

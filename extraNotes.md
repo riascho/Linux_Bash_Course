@@ -28,3 +28,15 @@ There is 2 types of programs:
 - executable file
 
 - `type [program name]` tells which type it is (and path)
+
+## `stty`
+
+The `stty` command is a tool to change the terminal line settings
+
+```bash
+stty tostop
+# turns on that any program is run until it produces output. It is then being stopped (paused)
+
+stty -tostop
+# turns this feature back off
+```
