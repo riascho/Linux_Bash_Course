@@ -14,10 +14,12 @@ touch [filename]
 ### `mkdir` - Create Directories
 
 ```bash
+# Creates a new folder/directory
 mkdir [directory_name]
-```
 
-- Creates a new folder/directory
+# creates new nested folder structure
+mkdir -p [folder/subfolder]
+```
 
 ---
 
@@ -147,6 +149,7 @@ head -n 10 [filepath]
 
 ```bash
 tail -n 10 [filepath]
+tail -f [filepath] # follows the file for any changes
 ```
 
 - Prints the last n lines of a file
