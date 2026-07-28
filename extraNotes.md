@@ -94,3 +94,27 @@ date -d "2026-12-25" +%A   # what weekday is a given date? → Friday
 ```
 
 > `-d` (arbitrary date strings) is a GNU coreutils feature, so it works on Linux but not on macOS/BSD `date`.
+
+## `id`
+
+```bash
+# shows current user uid and gid (groups)
+id
+```
+
+## FTP & etc.
+
+**FTP (File Transfer Protocol):** A standard network protocol used for transferring files between a client and a server. However, FTP itself is not secure.
+
+**FTPS (FTP Secure):** This is an extension to FTP that adds support for the Transport Layer Security (TLS) and the Secure Sockets Layer (SSL) cryptographic protocols. FTPS encrypts the data being transferred to enhance security.
+
+**SFTP (SSH File Transfer Protocol):** Despite its name, SFTP is not related to FTP. SFTP is an extension of SSH (Secure Shell) and provides a secure method to transfer files over a network. It uses the SSH protocol to encrypt and transfer data, making it inherently more secure compared to FTP.
+
+**SSL (Secure Sockets Layer):** A standard security technology for establishing an encrypted link between a server and a client. SSL is used in various protocols, including FTPS, to secure the transmission of data.
+
+**SSH (Secure Shell):** A cryptographic network protocol for operating network services securely over an unsecured network. SSH is the basis for SFTP, providing an encrypted connection for file transfers and secure command execution.
+
+**In summary:**
+`FTPS` enhances standard `FTP` by adding `SSL`/`TLS` for encryption.
+`SFTP` uses the `SSH` protocol to securely transfer files, and it is entirely different from `FTP`.
+`SSL` is the protocol that provides security for communication, while `SSH` is the protocol used for secure remote login and file transfer.
