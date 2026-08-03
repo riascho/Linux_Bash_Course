@@ -3,6 +3,9 @@
 In order to fix the linux on a computer, we need to boot up another linux from a USB drive
 
 1. download a 'live linux' system (usually an `.iso` image)
+
+> a **'live linux distribution'** is booted from a USB or DVD and saves no information on a disk
+
 2. copy it using the `dd` command to a USB drive (make sure it's bootable!)
 3. Be aware that all contents of the USB drive will be overwritten!
 4. We can then boot from this external drive -> see here for more help: https://ubuntu.com/tutorials/install-ubuntu-desktop#4-boot-from-usb-flash-drive

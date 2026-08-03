@@ -28,7 +28,7 @@ which [program_name]
 where [program_name]
 ```
 
-Simpler alternative to find the path of a program.
+Simpler alternative to find the path of a program (executable)
 
 ## Adding Directories to PATH
 

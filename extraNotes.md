@@ -118,3 +118,14 @@ id
 `FTPS` enhances standard `FTP` by adding `SSL`/`TLS` for encryption.
 `SFTP` uses the `SSH` protocol to securely transfer files, and it is entirely different from `FTP`.
 `SSL` is the protocol that provides security for communication, while `SSH` is the protocol used for secure remote login and file transfer.
+
+## File Locking `flock`
+
+We can use the `flock` command to lock a file. A file can only be locked by one program at the time. This is handy for cronjobs and running scripts to they don't affect each other (e.g. database writings)
+
+```bash
+# lock file during ping program
+flock file.txt ping google.com
+
+flock -n -E 0 file.txt ping google.com #if file.txt is locked already the next flock command will just exit (-n) with error code 0 (-e 0 = everything okay)
+```
